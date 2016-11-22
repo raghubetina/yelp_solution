@@ -5,4 +5,6 @@ class Restaurant < ApplicationRecord
 
   # Validations
 
+  validates :price_level, :inclusion => { :in => [ '1', ' 2', ' 3', ' 4' ]  }
+
 end
