@@ -5,6 +5,8 @@ class Review < ApplicationRecord
 
   # Validations
 
+  validates :restaurant_id, :presence => true
+
   validates :stars, :presence => true
 
   validates :stars, :inclusion => { :in => [ '1', ' 2', ' 3', ' 4', ' 5' ]  }
